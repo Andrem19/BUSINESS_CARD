@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Remart — Developer</title>
+    <meta name="description" content="Minimal developer portfolio. Projects, focus, and contact." />
+
+    <meta property="og:title" content="Remart — Developer" />
+    <meta property="og:description" content="Minimal developer portfolio. Projects, focus, and contact." />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <div class="container">
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <button class="theme-toggle" type="button" aria-pressed="false">
+            Theme
+          </button>
+        </nav>
+
+        <div class="hero-content">
+          <p class="eyebrow">Developer</p>
+          <h1>Remart</h1>
+          <p class="lead">
+            I build clean, fast web products. I enjoy simple solutions,
+            clear architecture, and thoughtful interfaces.
+          </p>
+
+          <div class="hero-actions" aria-label="Links">
+            <a class="button" href="#">GitHub</a>
+            <a class="button" href="#">LinkedIn</a>
+            <a class="button" href="mailto:hello@example.com">Email</a>
+            <a class="button" href="assets/Andrew-CV.pdf">CV</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="projects">
+      <section class="section featured-projects" aria-labelledby="featured-title">
+        <div class="container">
+          <h2 id="featured-title">Featured Projects</h2>
+          <div class="project-grid" id="featured-projects" role="list"></div>
+        </div>
+      </section>
+
+      <section class="section all-projects" aria-labelledby="all-title">
+        <div class="container">
+          <h2 id="all-title">All Projects</h2>
+          <div class="project-grid" id="all-projects" role="list"></div>
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title">About</h2>
+          <p>
+            A few lines about focus, core technologies, and the way I work.
+            Details and highlights will be added later.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contact</h2>
+        <p>
+          Open to new work and collaborations. Reach me at
+          <a href="mailto:hello@example.com" id="email-link">hello@example.com</a>.
+          <button class="copy-email" type="button" data-email="hello@example.com">
+            Copy email
+          </button>
+        </p>
+        <p class="footer-year">© <span id="year"></span> Remart</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/projects.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
