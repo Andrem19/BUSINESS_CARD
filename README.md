@@ -1,6 +1,13 @@
 # Remart Business Card
 
-Minimal, static developer business card with featured projects, about, and contact.
+Minimal static portfolio card for Remart. It highlights selected public projects,
+contact details, and a compact overview of the development focus.
+
+## Contents
+- Responsive static HTML/CSS/JavaScript site
+- Light/dark theme toggle
+- Featured project cards rendered from `assets/js/projects.js`
+- GitHub Actions deployment workflow for a VPS target
 
 ## Local development
 
@@ -12,7 +19,7 @@ python -m http.server 8000
 
 Then open `http://localhost:8000` in the browser.
 
-## Deployment (GitHub Actions)
+## Deployment
 
 On every push to the `main` branch, a GitHub Actions workflow connects to the VPS over SSH and uses `rsync` to sync the repository contents to `/var/www/remart.com` (the Nginx web root). Secrets for SSH host, user, and key are stored in GitHub Actions secrets.
 
